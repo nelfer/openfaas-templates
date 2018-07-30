@@ -42,6 +42,6 @@ USER app
 ENV fprocess="dotnet ./root.dll"
 EXPOSE 8080
 
-HEALTHCHECK --interval=1s CMD [ -e /tmp/.lock ] || exit 1
+#HEALTHCHECK --interval=1s CMD [ -e /tmp/.lock ] || exit 1
 
 CMD ["fwatchdog"]
